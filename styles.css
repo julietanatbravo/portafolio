@@ -193,6 +193,27 @@ form button {
   transition: transform 0.2s ease, filter 0.25s ease, box-shadow 0.25s ease;
 }
 
+.btn_CTA_h1 {
+  animation: cta-color-pulse 2.8s ease-in-out infinite;
+}
+
+@keyframes cta-color-pulse {
+  0%,
+  100% {
+    background-color: var(--lavender);
+  }
+
+  50% {
+    background-color: #f5c2df;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn_CTA_h1 {
+    animation: none;
+  }
+}
+
 .btn_CTA_h1:active,
 form button:active,
 .secciones_hijo:active {
