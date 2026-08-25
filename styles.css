@@ -24,15 +24,40 @@ body {
   line-height: 1.55;
 }
 
-body::before {
-  content: "PORTAFOLIO.EXE";
-  display: block;
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1120px;
   margin: 0 auto 8px;
+}
+
+.topbar_label {
   color: var(--ink);
   font-size: 0.75rem;
   font-weight: bold;
   letter-spacing: 0.08em;
+}
+
+.github_link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.github_icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+}
+
+.github_link:hover,
+.github_link:focus-visible {
+  color: #7650a5;
 }
 
 header,
